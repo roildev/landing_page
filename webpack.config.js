@@ -11,10 +11,13 @@ module.exports = {
         overlay: true
     },
     module: {
-        rules: {
-            test: /\.js$/,
-            loader: 'babel-loader',
-            exclude: '/node_modeles/'
-        }
+        rules: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: '/node_modeles/'
+            }
+            
+        ]
     }
 };
