@@ -1,0 +1,29 @@
+{
+  "name": "clean_yard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chagovcev/-clean_yard.io.git"
+  },
+  "author": "Roman Chagovtsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chagovcev/-clean_yard.io/issues"
+  },
+  "homepage": "https://github.com/chagovcev/-clean_yard.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
