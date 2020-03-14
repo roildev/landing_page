@@ -1,10 +1,12 @@
-import modalWindow1 from './modules/modalWindow1';
+import modalCall from './modules/modalCall';
 import sendForms from './modules/sendForms';
 import accordion from './modules/accordion';
-import modalWindow2 from './modules/modalWindow2';
+import modalDiscount from './modules/modalDiscount';
+import modalCheck from './modules/modalCheck';
 
 
-modalWindow1();
+modalCall();
 sendForms();
 accordion();
-modalWindow2();
+modalDiscount();
+modalCheck();

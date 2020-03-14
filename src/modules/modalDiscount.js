@@ -1,4 +1,4 @@
-const modalWindow2 = () => {
+const modalDiscount = () => {
  
      const discountBtn = document.querySelectorAll('.discount-btn'),
      popupDiscount = document.querySelector('.popup-discount'),
@@ -24,4 +24,4 @@ const modalWindow2 = () => {
 
 };
 
-export default modalWindow2;
+export default modalDiscount;

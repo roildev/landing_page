@@ -1,8 +1,8 @@
-const modalWindow1 = () => {
+const modalCall = () => {
 
     const callBtn = document.querySelectorAll('.call-btn'),
         popupCall = document.querySelector('.popup-call'),
-        popup = document.querySelector('.popup');
+        popup = document.querySelectorAll('.popup');
 
     for (let i = 0; i < callBtn.length; i++){
         
@@ -14,7 +14,7 @@ const modalWindow1 = () => {
         });
     }
 
-    popup.addEventListener('click', (event) => {
+    popup[0].addEventListener('click', (event) => {
         let target = event.target;
 
         if(target.classList.contains('popup-close') || 
@@ -27,4 +27,4 @@ const modalWindow1 = () => {
 
 };
 
-export default modalWindow1;
+export default modalCall;
