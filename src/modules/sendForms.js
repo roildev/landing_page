@@ -1,5 +1,7 @@
 const sendForms = () => {
-    //Валидация
+
+     //Валидация
+     
 
     const nameUser = document.querySelectorAll('.name-user'), 
         phoneUser = document.querySelectorAll('.phone-user');
@@ -23,8 +25,12 @@ const sendForms = () => {
     statusMesage.style.cssText = `font-size: 2.3rem; color: #F28C07`;
     
     for(let i = 0; i < form.length; i++){
-        form[i].addEventListener('submit', (event) => {
+        form[i].addEventListener('submit', (event) => {            
             event.preventDefault();
+
+            if(form[i].closest('.popup-discount')){
+                return;
+            }
             form[i].appendChild(statusMesage);
             statusMesage.textContent = loadMessage;
     
@@ -34,6 +40,7 @@ const sendForms = () => {
             formData.forEach((val, key) => {
                 body[key] = val;
             });
+            
     
             postData(body, () => {
                 statusMesage.textContent = successMessage;
@@ -44,7 +51,7 @@ const sendForms = () => {
         });
     }
     
-    const postData = (body, successData, errorData) => {
+     const postData = (body, successData, errorData) => {
         const request = new XMLHttpRequest();
 
         request.addEventListener('readystatechange', () => {

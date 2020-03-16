@@ -8,8 +8,8 @@ import accordionCalc from './modules/accordionCalc';
 
 
 modalCall();
-sendForms();
 accordion();
 modalDiscount();
 modalCheck();
+sendForms();
 accordionCalc();

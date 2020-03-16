@@ -12,7 +12,6 @@ const modalDiscount = () => {
      
      popup[1].addEventListener('click', (event) => {
         let target = event.target;
-        console.log('target: ', target);
 
         if(target.classList.contains('popup-close') || 
             target.classList.contains('popup')){
