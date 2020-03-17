@@ -28,7 +28,9 @@ const sendForms = () => {
         form[i].addEventListener('submit', (event) => {            
             event.preventDefault();
 
-            if(form[i].closest('.popup-discount')){
+            if(form[i].closest('.popup-discount') || 
+               form[i].closest('.director-form') ||
+               form[i].closest('.popup-consultation')){
                 return;
             }
             form[i].appendChild(statusMesage);

@@ -5,6 +5,7 @@ import modalDiscount from './modules/modalDiscount';
 import modalCheck from './modules/modalCheck';
 import accordionCalc from './modules/accordionCalc';
 import getStocks from './modules/getStocks';
+import modalConsult from './modules/modalConsult';
 
 
 
@@ -15,3 +16,4 @@ modalCheck();
 sendForms();
 accordionCalc();
 getStocks();
+modalConsult();

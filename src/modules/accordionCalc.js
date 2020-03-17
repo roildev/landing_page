@@ -65,7 +65,11 @@ const accordionCalc = () => {
     let priceOne = 10000,            
         priceTwo = 5000;
     
-        bottom.checked = false;        
+        bottom.checked = false; 
+        
+        distance.addEventListener('input', () => {
+            distance.value = distance.value.replace(/[^\d,]/g, '');
+        });
 
     //калькулятор первого блока
         
